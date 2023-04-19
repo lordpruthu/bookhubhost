@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BookHub.com | Free Refrence Books</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="/static/assets/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="/static/assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload container">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <!-- Logo -->
+          <a href="/" class="logo">
+            <span class="fa fa-book"></span> <span class="title">BookHub</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- Menu -->
+
+      <h2 class="h2">BOOKS AVILABLE FOR {{semName}}</h2>
+
+      <!-- Products -->
+      <section class="tiles">
+        <article class="style1">
+          <span class="image">
+            <img src="/static/images/computer.png" alt="" />
+          </span>
+          <a
+            href="/bookDetails?subject={{subject1|urlencode}}&semester={{ request.GET.Sem }}"
+          >
+            <h2>{{subject1}}</h2>
+          </a>
+        </article>
+        <article class="style2">
+          <span class="image">
+            <img src="/static/images/it.png" alt="" />
+          </span>
+          <a
+            href="/bookDetails?subject={{subject2|urlencode}}&semester={{ request.GET.Sem }}"
+          >
+            <h2>{{subject2}}</h2>
+          </a>
+        </article>
+        <article class="style3">
+          <span class="image">
+            <img src="/static/images/mechanical.png" alt="" />
+          </span>
+          <a
+            href="/bookDetails?subject={{subject3|urlencode}}&semester={{ request.GET.Sem }}"
+          >
+            <h2>{{subject3}}</h2>
+          </a>
+        </article>
+
+        <article class="style4">
+          <span class="image">
+            <img src="/static/images/civil.png" alt="" />
+          </span>
+          <a
+            href="/bookDetails?subject={{subject4|urlencode}}&semester={{ request.GET.Sem }}"
+          >
+            <h2>{{subject4}}</h2>
+          </a>
+        </article>
+
+        <article class="style5">
+          <span class="image">
+            <img src="/static/images/electicaleng.png" alt="" />
+          </span>
+          <a
+            href="/bookDetails?subject={{subject5|urlencode}}&semester={{ request.GET.Sem }}"
+          >
+            <h2>{{subject5}}</h2>
+          </a>
+        </article>
+
+        <article class="style6">
+          <span class="image">
+            <img src="/static/images/ai2.png" alt="" />
+          </span>
+          <a
+            href="/bookDetails?subject={{subject6|urlencode}}&semester={{ request.GET.Sem }}"
+          >
+            <h2>{{subject6}}</h2>
+          </a>
+        </article>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/assets/js/jquery.min.js"></script>
+    <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/static/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/static/assets/js/main.js"></script>
+  </body>
+</html>

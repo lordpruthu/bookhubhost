@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BookHub.com | Free Refrence Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <embed src={% url 'pdf_view'
+      %}'#toolbar=0&navpanes=0&scrollbar=0'style="width:718px; height:700px;"
+      frameborder="0">
+    </div>
+
+    <script>
+      // Get the current URL
+      var currentUrl = window.location.href;
+
+      // Extract the value of the "subject" parameter from the current URL
+      var subjectValue = new URLSearchParams(currentUrl).get("subject");
+
+      // Use the "subject" parameter value to display the correct PDF file
+      var pdfUrl =
+        "http://example.com/pdfs/" + encodeURIComponent(subjectValue) + ".pdf";
+
+      // Display the PDF file
+      var pdfEmbed = document.createElement("embed");
+      pdfEmbed.src = pdfUrl;
+      document.body.appendChild(pdfEmbed);
+    </script>
+  </body>
+</html>

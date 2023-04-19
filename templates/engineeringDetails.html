@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BookHub.com | Free Refrence Books</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="/static/assets/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="/static/assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload container">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <!-- Logo -->
+          <a href="/" class="logo">
+            <span class="fa fa-book"></span> <span class="title">BookHub</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- Menu -->
+
+      <h2 class="h2">BOOKS AVILABLE FOR {{streamName}}</h2>
+
+      <!-- Products -->
+      <section class="tiles">
+        <article class="style1">
+          <span class="image">
+            <img src="/static/images/computer.png" alt="" />
+          </span>
+          <a href="/semester1?Sem={{Sem1}}">
+            <h2>{{Sem1}}</h2>
+          </a>
+        </article>
+        <article class="style2">
+          <span class="image">
+            <img src="/static/images/it.png" alt="" />
+          </span>
+          <a href="/semester2?Sem={{Sem2}}">
+            <h2>{{Sem2}}</h2>
+          </a>
+        </article>
+        <article class="style3">
+          <span class="image">
+            <img src="/static/images/mechanical.png" alt="" />
+          </span>
+          <a href="/semester3?Sem={{Sem3}}">
+            <h2>{{Sem3}}</h2>
+          </a>
+        </article>
+
+        <article class="style4">
+          <span class="image">
+            <img src="/static/images/civil.png" alt="" />
+          </span>
+          <a href="/semester4?Sem={{Sem4}}">
+            <h2>{{Sem4}}</h2>
+          </a>
+        </article>
+
+        <article class="style5">
+          <span class="image">
+            <img src="/static/images/electicaleng.png" alt="" />
+          </span>
+          <a href="/semester5?Sem5={{Sem5}}">
+            <h2>{{Sem5}}</h2>
+          </a>
+        </article>
+
+        <article class="style6">
+          <span class="image">
+            <img src="/static/images/ai2.png" alt="" />
+          </span>
+          <a href="/semester6?Sem={{Sem6}}">
+            <h2>{{Sem6}}</h2>
+          </a>
+        </article>
+
+        <article class="style7">
+          <span class="image">
+            <img src="/static/images/datascience.png" alt="" />
+          </span>
+          <a href="/semester7?Sem={{Sem7}}">
+            <h2>{{Sem7}}</h2>
+          </a>
+        </article>
+
+        <article class="style8">
+          <span class="image">
+            <img src="/static/images/cybersecurity.png" alt="" />
+          </span>
+          <a href="/semester8?Sem={{Sem8}}">
+            <h2>{{Sem8}}</h2>
+          </a>
+        </article>
+
+        {% comment %}
+        <article class="style6">
+          <span class="image">
+            <img src="/static/images/iot.png" alt="" />
+          </span>
+          <a href="/semester">
+            <h2>IOT</h2>
+          </a>
+        </article>
+
+        <article class="style6">
+          <span class="image">
+            <img src="/static/images/blockchain.png" alt="" />
+          </span>
+          <a href="/semester">
+            <h2>BLOCKCHAIN</h2>
+          </a>
+        </article>
+        {% endcomment %}
+      </section>
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/assets/js/jquery.min.js"></script>
+    <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/static/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/static/assets/js/main.js"></script>
+  </body>
+</html>

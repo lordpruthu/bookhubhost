@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>View PDF</title>
+  </head>
+  <body>
+    <h1>View PDF</h1>
+    <p></p>
+
+    <script>
+      // Get the current URL
+      var currentUrl = window.location.href;
+
+      // Extract the value of the "subject" parameter from the current URL
+      var subjectValue = new URLSearchParams(currentUrl).get("subject");
+
+      // Use the "subject" parameter value to display the correct PDF file
+      var pdfUrl =
+        "http://127.0.0.1:8000/view-pdf/?subject=" +
+        encodeURIComponent(subjectValue);
+
+      // Display the PDF file
+      var pdfEmbed = document.createElement("embed");
+      pdfEmbed.src = pdfUrl;
+      document.body.appendChild(pdfEmbed);
+    </script>
+  </body>
+</html>

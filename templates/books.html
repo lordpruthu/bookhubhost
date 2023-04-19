@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BookHub.com | Free Refrence Books</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="/static/assets/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="/static/assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload container">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <!-- Logo -->
+          <a href="/" class="logo">
+            <span class="fa fa-book"></span> <span class="title">BookHub</span>
+          </a>
+
+          <!-- Nav -->
+        </div>
+      </header>
+
+      <!-- Menu -->
+
+      <h2 class="h2">TOP BOOKS FOR {{bookName}}</h2>
+
+      <!-- Products -->
+      <section class="tiles">
+        <article class="style1">
+          <span class="image">
+            <img
+              src="https://source.unsplash.com/1600x900/?{{book1}},book"
+              alt=""
+            />
+          </span>
+          <a href="/streamDetails?subject={{book1|urlencode}}">
+            <h2>{{book1}}</h2>
+          </a>
+        </article>
+        <article class="style2">
+          <span class="image">
+            <img
+              src="https://source.unsplash.com/1600x900/?{{book2}},book"
+              alt=""
+            />
+          </span>
+          <a href="/streamDetails?subject={{book2|urlencode}}">
+            <h2>{{book2}}</h2>
+          </a>
+        </article>
+        <article class="style3">
+          <span class="image">
+            <img
+              src="https://source.unsplash.com/1600x900/?{{book3}},book"
+              alt=""
+            />
+          </span>
+          <a href="/streamDetails?subject={{book3|urlencode}}">
+            <h2>{{book3}}</h2>
+          </a>
+        </article>
+
+        <article class="style4">
+          <span class="image">
+            <img
+              src="https://source.unsplash.com/1600x900/?{{book4}},book"
+              alt=""
+            />
+          </span>
+          <a href="/streamDetails?subject={{book4|urlencode}}">
+            <h2>{{book4}}</h2>
+          </a>
+        </article>
+
+        <article class="style5">
+          <span class="image">
+            <img
+              src="https://source.unsplash.com/1600x900/?{{book5}},book"
+              alt=""
+            />
+          </span>
+          <a href="/streamDetails/?subject={{book5|urlencode}}">
+            <h2>{{book5}}</h2>
+          </a>
+        </article>
+
+        <article class="style6">
+          <span class="image">
+            <img
+              src="https://source.unsplash.com/1600x900/?{{book6}},book"
+              alt=""
+            />
+          </span>
+          <a href="/streamDetails?subject={{book6|urlencode}}">
+            <h2>{{book6}}</h2>
+          </a>
+        </article>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/assets/js/jquery.min.js"></script>
+    <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/static/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/static/assets/js/main.js"></script>
+  </body>
+</html>

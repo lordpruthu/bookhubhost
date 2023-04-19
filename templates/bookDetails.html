@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>BookHub.com | Free Refrence Books</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="/" class="logo">
+									<span class="fa fa-book"></span> <span class="title">BookHub</span>
+								</a>
+
+							
+						</div>
+					</header>
+
+					<div id="main">
+						<div class="inner">
+							<h1>{{request.GET.subject}}<span class="pull-right">
+								
+							</span>
+							</h1>
+							
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-5">
+										<img src="https://source.unsplash.com/1600x900/?{{request.GET.subject}},book,college" class="img-fluid" alt="">
+									</div>
+
+									<div class="col-md-7">
+										
+
+										<div class="row">
+							               
+
+								                    <div class="col-sm-6">
+														 
+													
+													  <h1></h1>
+													  <a href="/view-pdf/?semester={{ request.GET.Sem }}&subject={{ request.GET.subject }}" target="_blank">
+														<input type="submit" class="primary" value="Download/ Open">
+													</a>		
+														
+								                    </div>        
+							            </div>
+										<div>
+										
+										</div>
+                                        <br>
+                                        <br>
+										<div class="container-fluid">
+										<div class="row-md-16">
+										</div>
+									</div>
+                                        
+                                    
+								</div>
+							</div>	
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<div class="container">
+									<div class="col-md-4">
+									{% if youtube_dict is not No_video_found %}
+										<h3>Video Refrences</h3>
+									<p> 
+										
+										{% for key,value in youtube_dict.items %}
+										<div class="row-md-2">
+												
+									
+										  <iframe width="280" height="158" src="{{value}}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+										</div>
+										{% endfor %}
+										{% else %}
+										<h3>No Video Refrences</h3>
+										{% endif %}	
+											
+									</p>
+									</div>
+								</div>
+
+								&nbsp;
+							</section>
+
+						</div>
+					</footer>
+
+			</div>
+
+
+		<!-- Scripts -->
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+			<script src="/static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/static/assets/js/main.js"></script>
+
+	</body>
+</html>
